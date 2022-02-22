@@ -13,6 +13,7 @@
   --primary-dark-bg: #2f303a;
   --header-line: #ECECEC;
   --card-border:#EEEEEE;
+  --header-bg: #C4C4C4;
 }
 
 body {
@@ -152,13 +153,42 @@ color: var(--accent-text)
 
 .contacts-tel:hover,
 .contacts-tel:focus {
+  text-decoration: underline;
   color: var(--accent-text);
 }
 
 .contacts-mail:hover,
 .contacts-mail:focus {
+  text-decoration: underline;
   color: var(--accent-text);
 }
+
+
+
+/* не працює чомусь
+
+.contacts-mail::before {
+  cursor: pointer;
+  content: "";
+  width: 16px;
+  height: 12px;
+  padding-left: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-right: 10px;
+  background-color: var(--primary-text-color);
+  background-image: url(../images/icon/envelope.svg)
+  background-size: contain;
+} */
+
+/* .contacts-tel::before {
+  display: block;
+  content: "";
+  margin-right: 10px;
+  color: var(--primary-text-color);
+  background-image: url(../images/icon/smartphone.svg);
+} */
+
 
 
 .hero {
@@ -168,6 +198,17 @@ color: var(--accent-text)
   text-align:center;
   background: var(--primary-dark-bg);
 }
+
+/* .overlay {
+  outline: 4px solid tomato;
+  height: 600px;
+  max-height: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/hero/hero-photo.jpg)
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
 
 .hero-title {
   text-align: center;
@@ -234,7 +275,7 @@ color: var(--accent-text)
   height: 120px;
   border-radius: 4px;
   background: var(--secondary-light-bg);
-  background-image: url(../images/svg/antenna-1.svg);
+  background-image: url(../images/features/antenna\.svg);
   background-size: 70px;
   background-position: center;
   background-repeat: no-repeat;
@@ -247,7 +288,7 @@ color: var(--accent-text)
   height: 120px;
   border-radius: 4px;
   background: var(--secondary-light-bg);
-  background-image: url(../images/svg/clock-1.svg);
+  background-image: url(../images/features/clock\.svg);
   background-size: 70px;
   background-position: center;
   background-repeat: no-repeat;
@@ -260,7 +301,7 @@ color: var(--accent-text)
   height: 120px;
   border-radius: 4px;
   background: var(--secondary-light-bg);
-  background-image: url(../images/svg/diagram-1.svg);
+  background-image: url(../images/features/diagram\.svg);
   background-size: 70px;
   background-position: center;
   background-repeat: no-repeat;
@@ -273,7 +314,7 @@ color: var(--accent-text)
   height: 120px;
   border-radius: 4px;
   background: var(--secondary-light-bg);
-  background-image: url(../images/svg/astronaut-1.svg);
+  background-image: url(../images/features/astronaut\.svg);
   background-size: 70px;
   background-position: center;
   background-repeat: no-repeat;
