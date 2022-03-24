@@ -14,6 +14,7 @@
   --header-line: #ECECEC;
   --card-border:#EEEEEE;
   --header-bg: #C4C4C4;
+  --icon-color: #AFB1B8;
 }
 
 body {
@@ -177,7 +178,7 @@ color: var(--accent-text)
   padding-bottom: 2px;
   margin-right: 10px;
   background-color: var(--primary-text-color);
-  background-image: url(../images/icon/envelope.svg)
+  background-image: url(../images/icons/envelope.svg)
   background-size: contain;
 } */
 
@@ -209,6 +210,11 @@ color: var(--accent-text)
   background-repeat: no-repeat;
   background-size: contain;
 } */
+
+.hero-img {
+  height: 600px;
+  
+}
 
 .hero-title {
   text-align: center;
@@ -248,6 +254,17 @@ color: var(--accent-text)
 .button:focus {
   background: var(--button-accent);
   cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+  clip: rect( 0 0 0 0);
+  overflow: hidden;
 }
 
 .features {
@@ -453,24 +470,29 @@ border-radius: 0px 0px 4px 4px;
 
 .socials-item {
   display: flex;
-  align-items: center;
+  
+  padding: 0px;
+  border: none;
 }
 
 .socials-item:not(:last-child) {
   margin-right: 10px;
 }
+.social-icon {
+  background-position: center
+}
 
 .socials-link {
-  display: inline-block;
+  display: block;
   width: 44px;
   height: 44px;
 
- background-color: #ffffff;
- border-radius: 50%;
-/* 
- background-repeat: no-repeat;
- background-size: 20px;
- background-position: center; */
+  background-color: var(--secondary-lite-tx);
+  fill: var(--icon-color);
+  border-radius: 50%;
+  /* background-repeat: no-repeat;
+ background-size: 20px; */
+ /* background-position: center; */
 }
 /* 
 .socials-link-instagram {
@@ -489,6 +511,54 @@ border-radius: 0px 0px 4px 4px;
   background-image: url();
 } */
 
+.socials-link:hover {
+  fill: var(--secondary-lite-txt);
+  background-color: var(--accent-text);
+} 
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-list {
+  display: flex;
+  justify-content: center;
+}
+
+.client-item {
+  padding: 0px;
+  
+  display: block;
+
+  width: 170px;
+  height: 92px;
+
+  fill: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  
+  cursor: pointer;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  display: inline-block;
+  width: 170px;
+  height: 92px;
+
+  background-color: var(--secondary-lite-tx);
+  fill: var(--icon-color);
+  border-radius: 50%;
+}
+
+.client-item:hover {
+  fill:  var(--accent-text);
+  border: 1px solid var(--accent-text);
+  cursor: pointer;
+}
 
 .footer {
   height: 252px;
