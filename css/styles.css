@@ -489,6 +489,7 @@ border-radius: 0px 0px 4px 4px;
 
 .client-item {
   display: flex;
+  box-sizing: border-box;
 
   align-items: center;
   justify-content: center;
@@ -500,6 +501,7 @@ border-radius: 0px 0px 4px 4px;
 
   fill: var(--icon-color);
   border: 1px solid var(--icon-color);
+  border-radius: 4px;
 }
 
 .client-item:not(:last-child) {
