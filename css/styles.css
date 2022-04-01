@@ -641,17 +641,14 @@ border-radius: 0px 0px 4px 4px;
 
 .social-footer-link {
   display: flex;
-
-}
-
-.social-footer-link:focus {
-  background-color: var(--accent-text);
 }
 
 .footer-ico {
   fill: var(--secondary-lite-txt);
 }
 
+
+/* Portfolio */
 
 .menue {
   background-color: var(--primary-light-bg);
